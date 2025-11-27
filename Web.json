@@ -1,0 +1,22 @@
+{
+  "project": {
+    "name": "OS-Discord-Bot-Setup",
+    "developer": "luisdiko14-lab",
+    "github_repo": "https://github.com/luisdiko14-lab/OS-Discord-Bot-Setup",
+    "hosting": "Discord.js / Local Machine"
+  },
+  "features": [
+    "Bot Setup System",
+    "Status Options (DND / Idle / Invisible)",
+    "Token Check Tool",
+    "AI Key Support",
+    "Auto-Message Sender"
+  ],
+  "tips": [
+    "Always run 'git add .', 'commit', and 'git push' to update your repo!"
+  ],
+  "metadata": {
+    "info_panel_title": "🌟 OS Discord Bot Setup - Info Panel 🌟",
+    "display_emojis": true
+  }
+}
