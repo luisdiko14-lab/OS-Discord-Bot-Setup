@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌟 OS Discord Bot Setup - Info Panel 🌟</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f0f;
+      color: #00ff00;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .panel {
+      border: 2px solid #00ff00;
+      padding: 20px 40px;
+      border-radius: 12px;
+      max-width: 600px;
+      text-align: left;
+      box-shadow: 0 0 15px #00ff00aa;
+      animation: glow 2s infinite alternate;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    ul {
+      margin: 5px 0 15px 20px;
+    }
+
+    button {
+      background-color: #0f0f0f;
+      border: 2px solid #00ff00;
+      color: #00ff00;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #00ff00;
+      color: #0f0f0f;
+      box-shadow: 0 0 10px #00ff00;
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 10px #00ff00aa; }
+      to { box-shadow: 0 0 25px #00ff00ff; }
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="panel" id="infoPanel">
+    <h1>🤖 OS Discord Bot Setup - Info Panel</h1>
+    <p class="section-title">📦 Project Info:</p>
+    <p>Project Name: <strong>OS-Discord-Bot-Setup</strong></p>
+    <p>Developer: <strong>luisdiko14-lab</strong></p>
+    <p>GitHub Repo: <strong><a href="https://github.com/luisdiko14-lab/OS-Discord-Bot-Setup" target="_blank" style="color:#00ff00">github.com/luisdiko14-lab/OS-Discord-Bot-Setup</a></strong></p>
+
+    <p class="section-title">⚙️ Features:</p>
+    <ul>
+      <li>✔ Bot Setup System</li>
+      <li>✔ Status Options (DND / Idle / Invisible)</li>
+      <li>✔ Token Check Tool</li>
+      <li>✔ AI Key Support</li>
+      <li>✔ Auto-Message Sender</li>
+    </ul>
+
+    <p>🚀 Hosting: Discord.js / Local Machine</p>
+
+    <p class="section-title">💡 Tip:</p>
+    <p>Always run <code>git add .</code>, <code>commit</code> and <code>git push</code> to update your repo!</p>
+
+    <button id="closeBtn">Press me to close panel</button>
+  </div>
+
+  <script>
+    const panel = document.getElementById('infoPanel');
+    const btn = document.getElementById('closeBtn');
+
+    btn.addEventListener('click', () => {
+      panel.classList.add('hidden');
+      alert("Panel closed. Have a great day! 🌟");
+    });
+
+    // Optional: Press any key to close
+    document.addEventListener('keydown', () => {
+      if(!panel.classList.contains('hidden')) {
+        panel.classList.add('hidden');
+        alert("Panel closed with a key press! 🌟");
+      }
+    });
+  </script>
+</body>
+</html>
